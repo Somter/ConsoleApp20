@@ -7,7 +7,7 @@ namespace PriceListLib
 {
     public class PriceList
     {
-        private List<InformationCarrier> carriers = new List<InformationCarrier>();
+        private List<InformationCarrier> carriers = new List<InformationCarrier>(); 
         public void AddCarrier(InformationCarrier carrier)
         {
             carriers.Add(carrier);
