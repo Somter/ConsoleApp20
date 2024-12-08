@@ -11,7 +11,7 @@ namespace InfCar
     public class DVD : InformationCarrier
     {
         [DataMember]
-        public double WriteSpeed { get; set; }
+        public double WriteSpeed { get; set; } 
 
         public DVD(string manufacturer, string model, string name, double capacity, int quantity, double writeSpeed)
             : base(manufacturer, model, name, capacity, quantity)
@@ -22,6 +22,7 @@ namespace InfCar
         public override void Report()
         {
             Console.WriteLine($"--- Отчёт для DVD-диска ---");
+            Console.WriteLine($"Название: {Name}");
             Console.WriteLine($"Производитель: {ManufacturersName}");
             Console.WriteLine($"Модель: {Model}");
             Console.WriteLine($"Ёмкость: {MediaCapacity} Гб");

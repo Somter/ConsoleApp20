@@ -68,7 +68,7 @@ namespace ConsoleApp20
         private void AddCarrier()
         {
             Console.WriteLine("Добавление носителя информации.");
-            Console.Write("Введите тип носителя (Flash, DVD, RemovableHDD): ");
+            Console.Write("Введите тип носителя (Flash, DVD, HDD): ");
             var type = Console.ReadLine();
 
             Console.Write("Введите имя производителя: ");
@@ -96,7 +96,7 @@ namespace ConsoleApp20
                 double.TryParse(Console.ReadLine(), out var writeSpeed);
                 carrier = new DVD(manufacturer, model, name, capacity, quantity, writeSpeed);
             }
-            else if (type.Equals("RemovableHDD", StringComparison.OrdinalIgnoreCase))
+            else if (type.Equals("HDD", StringComparison.OrdinalIgnoreCase))
             {
                 Console.Write("Введите скорость вращения шпинделя: ");
                 int.TryParse(Console.ReadLine(), out var spindleSpeed);

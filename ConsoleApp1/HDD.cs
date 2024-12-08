@@ -23,7 +23,8 @@ namespace InfCar
 
         public override void Report()
         {
-            Console.WriteLine($"--- Отчёт для съемного жесткого диска ---");
+            Console.WriteLine($"--- Отчёт для съемного жестко ---");
+            Console.WriteLine($"Название: {Name}");
             Console.WriteLine($"Производитель: {ManufacturersName}");
             Console.WriteLine($"Модель: {Model}");
             Console.WriteLine($"Ёмкость: {MediaCapacity} Гб");

@@ -23,6 +23,7 @@ namespace InfCar
         public override void Report()
         {
             Console.WriteLine($"--- Отчёт для Flash-памяти ---");
+            Console.WriteLine($"Название: {Name}");
             Console.WriteLine($"Производитель: {ManufacturersName}");
             Console.WriteLine($"Модель: {Model}");
             Console.WriteLine($"Ёмкость: {MediaCapacity} Гб");
